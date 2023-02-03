@@ -81,6 +81,77 @@
             </tr>
         </tbody>
     </table>
+
+    <form>
+        <fieldset  class="file">
+              <legend class="name">Ask us about planets </legend>  
+            <div class="name-email">
+                <label for="name">Full Name:</label>
+                <input type="text" name="fullName" id="name" minlength="1" maxlength="50" required>
+            </div>
+
+            <div class="name-email">
+                <label for="email">Email:</label>
+                <input type="email" name="yourEmail" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required>
+            </div>
+
+            <p class="name-email">Favorite planet:</p>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="mercury" value="mercury">
+                <label for="mercury">Mercury</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="venus" value="venus">
+                <label for="venus">Venus</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="earth" value="earth" checked>
+                <label for="earth">Earth</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="mars" value="mars">
+                <label for="mars">Mars</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="jupite" value="jupiter">
+                <label for="jupiter">Jupiter</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="saturn" value="saturn">
+                <label for="saturn">Saturn</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="uranus" value="uranus">
+                <label for="uranus">Uranus</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="neptune" value="neptune">
+                <label for="neptune">Neptune</label>
+            </div>
+
+            <div class="planets">
+                <input type="radio" name="planet" id="pluto" value="pluto">
+                <label for="pluto">Pluto</label>
+            </div>
+
+            <div class="name-email" >
+                <input type="checkbox" id="check" name="agree" value="on">
+                <label for="check">I agree to the <span class="just-here">terms and conditions</span> </label>
+            </div>
+
+            <button type="reset" class="submit-reset">Reset</button>
+            <button type="submit" class="submit-reset">Ask away</button>
+        </fieldset>
+    </form>
 </body>
 
 </html>
