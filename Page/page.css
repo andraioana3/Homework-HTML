@@ -1,0 +1,335 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+}
+#pink{
+    height: 500px;
+    width: 300px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(7, 500px);
+    grid-template-areas: 
+    "header header header header"
+    "info-left info-left img-right img-right"
+    "img-left img-left info-right info-right"
+    "aside aside main main"
+    "testimonial testimonial testimonial testimonial"
+    "img-lips img-lips img-skin img-skin"
+    "footer footer footer footer"
+    ;
+}
+
+.menu{
+    grid-area: header;
+}
+
+.card-marketing{
+    grid-area: info-left;
+}
+
+.imagefor-marketing{
+    grid-area: img-right;
+}
+
+.digital{
+    grid-area: info-right;
+}
+
+.imagefor-digital{
+    grid-area: img-left;
+}
+
+.graphic-desighne{
+    grid-area: aside;
+}
+
+.photography{
+    grid-area: main;
+}
+
+.testimonials{
+    grid-area: testimonial;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.menu{
+    height: 400px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/seven.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 1200px;
+    height: 400px;
+    padding: 10px;
+    
+}
+
+.menu-header .menu-item {
+    display: inline-block;
+    padding: 8px 5px;
+}
+
+.menu-header .menu-contact {
+    display: inline-block;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border-radius: 65%;
+    border: none;
+
+}
+
+div img{
+    height: 500px;
+    width: 600px;
+}
+
+.info-marketing {
+    background-color: white;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.info-marketing .margeting-text {
+    text-align: flex-end;
+    margin-bottom: 36px;
+    margin-left: 54px;
+    width: 300px;
+}
+
+.info-marketing .info-item {
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+.digital-card {
+    background-color: white;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.digital-card .digital-text {
+    text-align: flex-end;
+    margin-bottom: 36px;
+    margin-left: 36px;
+    width: 300px;
+}
+
+.digital-card .digital-item {
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+.graphic{
+    background-image: url(img/bomboane.jpg) ;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ }
+ 
+ .graphic .graphic-text{
+     text-align: center;
+     margin-bottom: 36px;
+     width: 300px;
+ }
+ 
+ .graphic h2{
+ margin-bottom: 36px;
+ }
+
+ .photography-img{
+    background-image: url(img/vata.jpg) ;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ }
+ 
+ 
+ .photography-img .photography-text{
+     text-align: center;
+     margin-bottom: 36px;
+     width: 300px;
+ }
+ 
+ .photography-text h2{
+ margin-bottom: 36px;
+ }
+
+.testimonial-title {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 42px;
+    margin-bottom: 32px;
+    color: gray;
+}
+
+.testimonials-card {
+    display: flex;
+    width: 1200px;
+    height: 500px;
+}
+
+.emily-testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 400px;
+    margin-left: 52px;
+}
+
+.emily-testimonial p {
+    align-self: center;
+    margin: 24px 24px 24px;
+}
+
+.emily-testimonial h2 {
+    align-self: center;
+}
+
+.emily-testimonial .circle-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emily-testimonial .circle-img img {
+    margin-top: 42px;
+    margin-bottom: 32px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.thomas-testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 400px;
+    margin-left: 52px;
+}
+
+.thomas-testimonial p {
+    align-self: center;
+    margin: 24px 24px 24px;
+}
+
+.thomas-testimonial h2 {
+    align-self: center;
+}
+
+.thomas-testimonial .thomas-cirlce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thomas-testimonial .thomas-cirlce img {
+    margin-top: 42px;
+    margin-bottom: 32px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.jennie-testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 400px;
+    margin-left: 52px;
+    margin-right: 52px;
+}
+
+.jennie-testimonial p {
+    align-self: center;
+    margin: 24px 24px 24px;
+}
+
+.jennie-testimonial h2 {
+    align-self: center;
+}
+
+.jennie-testimonial .jennie-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jennie-testimonial .jennie-circle img {
+    margin-top: 42px;
+    margin-bottom: 32px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonials-card .job-name {
+    color: gray;
+}
+
+.legend{
+    background-color: rgb(77, 219, 186);
+    padding: 24px;
+}
+
+.legend .legend-title{
+    display: flex;
+    justify-content: center;
+    color: rgb(36, 104, 88);
+}
+
+.legend .legend-info{
+    display: flex;
+    justify-content: center; 
+}
+
+.legend .legend-info .legend-item{
+    margin: 36px 24px 24px 24px;
+    color: rgb(36, 104, 88);
+}
+
+.legend  .legend-icon{
+    display: flex;
+    justify-content: center;  
+}
+
+.legend  .legend-icon .icon{
+    margin: 44px 12px 24px 24px;
+    color: rgb(36, 104, 88);
+}
+
