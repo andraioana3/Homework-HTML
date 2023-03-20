@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        var gameArray = ["Rock", "Paper", "Scissors"];
+
+        function play() {
+
+            var computerChoice = gameArray[Math.floor(Math.random() * gameArray.length)];
+            var userChoice = gameArray[Math.floor(Math.random() * gameArray.length)];
+
+            if (
+                (computerChoice === "Rock" && userChoice === "Scissors") ||
+                (computerChoice === "Paper" && userChoice === "Rock") ||
+                (computerChoice === "Scissors" && userChoice === "Paper")
+            ) {
+                console.log(`Computer choice: ${computerChoice}; User choice: ${userChoice}; Computer wins!`);
+            } else {
+                console.log(`Computer choice: ${computerChoice}; User choice: ${userChoice}; User wins!`);
+            }
+        }
+
+        play();
+
+
+
+    </script>
+</body>
+
+</html>
