@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Stilizare pentru pagina de register.html*/
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container .card {
+    background: linear-gradient(to top left, lightcoral, lightblue);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px black;
+  }
+  
+  .container .card input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+  }
+  
+  .container .card button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top left, rgb(251, 165, 165), rgb(81, 141, 161));
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+     background: linear-gradient(to top left, rgb(251, 165, 165), rgb(81, 141, 161));;
+  }
+
+@media only screen and (max-width: 600px) {
+  .container .card {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container .card {
+    width: 70%;
+  }
+}
+  
+/* Stilizare pentru pagina de level-btn.html*/
+
+  .container-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container-level .card-level {
+    background: linear-gradient(to top left, lightcoral, lightblue);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-level .card-level .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .container-level .card-level .button-container .button-level {
+    padding: 10px 20px;
+    background: linear-gradient(to top left, rgb(251, 165, 165), rgb(81, 141, 161));
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container-level .card-level {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container-level .card-level {
+      width: 70%;
+    }
+  }
+
+/* Stilizare pentru pagina de easy-quiz*/
+
+  h1 {
+    text-align: center;
+  }
+  
+  .language-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .easy-btn {
+     background: linear-gradient(to top left, rgb(251, 165, 165), rgb(195, 222, 231));
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
+  button:hover {
+    background-color: darkblue;
+  }
+ 
+  .question {
+    font-weight: bold;
+  }
+  
+  .answers {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .answer-label {
+    display: block;
+    margin: 5px;
+  }
+
+  .question-container {
+    background: linear-gradient(to top left, rgb(254, 247, 247), rgb(130, 183, 201));
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+  }
+  
+  .question {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .answers {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .answer-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .answer-label input {
+    margin-right: 5px;
+  }
+
+@media only screen and (max-width: 600px) {
+  .question-container {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .question-container {
+    width: 80%;
+  }
+}
+ 
+
+ /*stilizare pagina de feedback.html*/
+  
+  .container-feedback {
+    max-width: 600px;
+    padding: 20px;
+    background: linear-gradient(to top left, rgb(251, 165, 165), rgb(81, 141, 161));;
+    border-radius: 5px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container-feedback h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    order: -1;
+  }
+  
+  .container-feedback .form-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  label, input, textarea {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  input, textarea {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 15px;
+    background: linear-gradient(to top left, rgb(251, 165, 165), rgb(195, 222, 231));;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+@media only screen and (max-width: 600px) {
+  .container-feedback {
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container-feedback {
+    margin: 40px auto;
+  }
+}
+
+  #toggleTheme {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+  }
+  
+  
+  .dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .dark-mode .card {
+    background-color: #1e1e1e;
+  }
+
